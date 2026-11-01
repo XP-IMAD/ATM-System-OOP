@@ -4,6 +4,7 @@
 #include <iomanip>
 #include "clsInputeValidate.h"
 #include "clsScreen.h"
+#include "clsQuickWithdrawScreen.h"
 
 class clsMainMenue : protected clsScreen
 {
@@ -17,7 +18,7 @@ private:
 
 	static short _ReadMainMenueOption()
 	{
-		cout << setw(40) << left << "" << "Choose What Do You Want To Do From [1 To 5]: ";
+		cout << setw(38) << left << "" << "Choose What Do You Want To Do From [1 To 5]: ";
 		short Option = clsInputValidate::ReadNumberBetween<short>(1, 5, "\nEnter Number Between [1 And 5]: ");
 
 		return Option;
@@ -33,7 +34,8 @@ private:
 
 	static void _ShowQuickWithdrawScreen()
 	{
-		cout << "\n\nQuick Withdraw Screen Will Be Here...\n";
+		//cout << "\n\nQuick Withdraw Screen Will Be Here...\n";
+		clsQuickWithdrawScreen::ShowQuickWithdrawScreen();
 	}
 
 	static void _ShowNormalWithdrawScreen()
@@ -98,16 +100,16 @@ public:
 		_DrawScreenHeader("\t\tATM Main Menue");
 
 		cout << endl;
-		cout << setw(40) << left << "" << "===========================================\n";
-		cout << setw(40) << left << "" << "               ATM Main Menue\n";
-		cout << setw(40) << left << "" << "===========================================\n\n";
+		cout << setw(38) << left << "" << "===================================================\n";
+		cout << setw(38) << left << "" << "                   ATM Main Menue\n";
+		cout << setw(38) << left << "" << "===================================================\n\n";
 
-		cout << setw(40) << left << "" << "\t[1] Quick Withdraw\n";
-		cout << setw(40) << left << "" << "\t[2] Normal Withdraw\n";
-		cout << setw(40) << left << "" << "\t[3] Deposit\n";
-		cout << setw(40) << left << "" << "\t[4] Account Details\n";
-		cout << setw(40) << left << "" << "\t[5] LogOut\n";
-		cout << setw(40) << left << "" << "===========================================\n\n";
+		cout << setw(38) << left << "" << "\t[1] Quick Withdraw\n";
+		cout << setw(38) << left << "" << "\t[2] Normal Withdraw\n";
+		cout << setw(38) << left << "" << "\t[3] Deposit\n";
+		cout << setw(38) << left << "" << "\t[4] Account Details\n";
+		cout << setw(38) << left << "" << "\t[5] Logout\n";
+		cout << setw(38) << left << "" << "===================================================\n\n";
 
 		_PerformATMMenueScreen(enATMMenueOption(_ReadMainMenueOption()));
 
