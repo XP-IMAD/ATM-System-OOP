@@ -44,6 +44,10 @@ private:
 				cout << "\n\nDone Successfully, New Balance is : " << Client.AccountBalance
 					<< endl;
 			}
+			else
+			{
+				cout << "\nError, The Operation Has Been cancelled :(\n";
+			}
 		}
 
 	}

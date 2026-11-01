@@ -147,6 +147,7 @@
     <ClInclude Include="clsInputeValidate.h" />
     <ClInclude Include="clsLoginScreen.h" />
     <ClInclude Include="clsMainMenue.h" />
+    <ClInclude Include="clsNormalWithdrawScreen.h" />
     <ClInclude Include="clsPerson.h" />
     <ClInclude Include="clsQuickWithdrawScreen.h" />
     <ClInclude Include="clsScreen.h" />

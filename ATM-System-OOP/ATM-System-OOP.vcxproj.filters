@@ -60,6 +60,9 @@
       <Filter>Header Files\Screen</Filter>
     </ClInclude>
     <ClInclude Include="clsQuickWithdrawScreen.h">
+      <Filter>Header Files\Screen</Filter>
+    </ClInclude>
+    <ClInclude Include="clsNormalWithdrawScreen.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

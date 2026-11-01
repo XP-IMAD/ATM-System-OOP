@@ -5,6 +5,7 @@
 #include "clsInputeValidate.h"
 #include "clsScreen.h"
 #include "clsQuickWithdrawScreen.h"
+#include "clsNormalWithdrawScreen.h"
 
 class clsMainMenue : protected clsScreen
 {
@@ -26,7 +27,7 @@ private:
 
 	static void _GoBackToMainMenueScreen()
 	{
-		cout << "\n\n [>] Press Any Key To Go Back To ATM Main Menue...";
+		cout << "\n [>] Press Any Key To Go Back To ATM Main Menue...";
 
 		system("pause>0");
 		ShowMainMenueScreen();
@@ -40,7 +41,8 @@ private:
 
 	static void _ShowNormalWithdrawScreen()
 	{
-		cout << "\n\nNormal Withdraw Screen Will Be Here...\n";
+		//cout << "\n\nNormal Withdraw Screen Will Be Here...\n";
+		clsNormalWithdrawScreen::ShowNormalWithdrawScreen();
 	}
 
 	static void _ShowDepositScreen()
