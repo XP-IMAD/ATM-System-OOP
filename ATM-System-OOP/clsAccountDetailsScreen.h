@@ -11,7 +11,7 @@ private:
 
 	static void _PrintClientCard()
 	{
-		cout << "\n\n This is Your Personal Information: \n";
+		cout << "\n\n This is Your Personal Information:";
 		cout << "\n_____________________________________\n";
 		cout << "\nFull Name  : " << Client.FullName();
 		cout << "\nEmail      : " << Client.Email;
@@ -62,7 +62,7 @@ public:
 			{
 			case clsClient::enSaveResult::svSucceded:
 
-				cout << "\nYour Personal Info Has Been Updated Successfully :)\n";
+				cout << "\n\nYour Personal Info Has Been Updated Successfully :)";
 				_PrintClientCard();
 				break;
 
