@@ -6,6 +6,7 @@
 #include "clsScreen.h"
 #include "clsQuickWithdrawScreen.h"
 #include "clsNormalWithdrawScreen.h"
+#include "clsDepositScreen.h"
 
 class clsMainMenue : protected clsScreen
 {
@@ -47,7 +48,8 @@ private:
 
 	static void _ShowDepositScreen()
 	{
-		cout << "\n\nDeposit Screen Will Be Here...\n";
+		//cout << "\n\nDeposit Screen Will Be Here...\n";
+		clsDepositScreen::ShowDepositScreen();
 	}
 
 	static void _ShowAccountDetailsScreen()
@@ -89,6 +91,7 @@ private:
 
 
 		case enExit:
+			Client = clsClient::GetEmptyClientObject();
 			break;
 
 		}

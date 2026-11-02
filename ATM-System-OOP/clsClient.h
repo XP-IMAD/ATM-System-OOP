@@ -232,5 +232,20 @@ public:
 		return true;
 	}
 
+	bool Deposit(double Amount)
+	{
+		if (Amount <= 0)
+			return false;
+
+		AccountBalance += Amount;
+		_Update();
+		return true;
+	}
+
+
+	static clsClient GetEmptyClientObject()
+	{
+		return _GetEmptyOpject();
+	}
 };
 

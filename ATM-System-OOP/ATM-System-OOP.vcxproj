@@ -144,6 +144,7 @@
   <ItemGroup>
     <ClInclude Include="clsClient.h" />
     <ClInclude Include="clsDate.h" />
+    <ClInclude Include="clsDepositScreen.h" />
     <ClInclude Include="clsInputeValidate.h" />
     <ClInclude Include="clsLoginScreen.h" />
     <ClInclude Include="clsMainMenue.h" />
