@@ -7,6 +7,7 @@
 #include "clsQuickWithdrawScreen.h"
 #include "clsNormalWithdrawScreen.h"
 #include "clsDepositScreen.h"
+#include "clsAccountDetailsScreen.h"
 
 class clsMainMenue : protected clsScreen
 {
@@ -54,7 +55,8 @@ private:
 
 	static void _ShowAccountDetailsScreen()
 	{
-		cout << "\n\nAccount Details Screen Will Be Here...\n";
+		//cout << "\n\nAccount Details Screen Will Be Here...\n";
+		clsAccountDetailsScreen::ShowAccountDetialsScreen();
 	}
 
 	static void _PerformATMMenueScreen(enATMMenueOption MenueOP)

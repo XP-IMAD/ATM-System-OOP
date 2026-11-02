@@ -242,10 +242,31 @@ public:
 		return true;
 	}
 
-
 	static clsClient GetEmptyClientObject()
 	{
 		return _GetEmptyOpject();
 	}
+
+	enum enSaveResult {svFailedEmptyObject = 0, svSucceded = 1};
+
+	enSaveResult Save()
+	{
+		switch (_Mode)
+		{
+		case enMode::EmptyMode:
+
+			return enSaveResult::svFailedEmptyObject;
+			break;
+
+
+		case enMode::UpdateMode:
+
+			_Update();
+
+			return enSaveResult::svSucceded;
+			break;
+		}
+	}
+
 };
 

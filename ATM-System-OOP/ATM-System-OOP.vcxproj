@@ -142,6 +142,7 @@
     <ClCompile Include="ATM-System-OOP.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="clsAccountDetailsScreen.h" />
     <ClInclude Include="clsClient.h" />
     <ClInclude Include="clsDate.h" />
     <ClInclude Include="clsDepositScreen.h" />
